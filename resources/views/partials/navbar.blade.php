@@ -1,3 +1,4 @@
+@push('script')
 <nav class="navbar navbar-top navbar-expand navbar-dark bg-green border-bottom">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -191,6 +192,11 @@
             <div class="dropdown-menu  dropdown-menu-right ">
 
               <div class="dropdown-divider"></div>
+              <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" class="dropdown-item">
+                <i class="ni ni-single-02"></i>
+                <span>Our profiles</span>
+              </a>
+
               <a class="dropdown-item" href="{{ route('logout') }}"
               onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
@@ -206,3 +212,4 @@
       </div>
     </div>
   </nav>
+

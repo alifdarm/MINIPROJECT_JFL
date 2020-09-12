@@ -42,6 +42,7 @@ class AdminController extends Controller
        if ($request->annotate1 == 'Accept'){
 
         $query = Annotate::create([
+            'user_id' => Auth::user()->id,
             'antrian_id' => $id,
             'instansi_id' => $corp,
             'annotate' => 'accepted'
@@ -49,6 +50,7 @@ class AdminController extends Controller
        }
        else{
         $query = Annotate::create([
+            'user_id' => Auth::user()->id,
             'antrian_id' => $id,
             'instansi_id' => $corp,
             'annotate' => 'declined'

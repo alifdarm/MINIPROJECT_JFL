@@ -29,8 +29,8 @@ class MiniprojectController extends Controller
         $ind = Auth::user();
         $list = Instansi::all();
         $list2 = DB::table('antrian')->where('user_id',Auth::user()->id)->get();
-        $acc = Annotate::where('annotate','accepted')->get();
-        $dec = Annotate::where('annotate','declined')->get();
+        $acc = DB::select('select * from annotate where user_id = ? and annotate = ?', [Auth::user()->id,'accepted']);
+        $dec = DB::select('select * from annotate where user_id = ? and annotate = ?', [Auth::user()->id,'declined']);
         $count_bank= count(DB::select('select * from antrian where instansi_id = ?', [1]));
         $count_imigrasi= count(DB::select('select * from antrian where instansi_id = ?', [2]));
         $count_sehat= count(DB::select('select * from antrian where instansi_id = ?', [3]));

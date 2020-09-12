@@ -47,7 +47,85 @@
           <div class="row">
             <div class="col">
               <h5 class="card-title text-uppercase text-muted mb-0">Waktu Tunggu Total</h5>
-              <span class="h2 font-weight-bold mb-0">{{ 7*count($list2) }}</span>
+              <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span class="h2 font-weight-bold mb-0">Click For Details</span></a>
+                <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Light table -->
+                                    <div class="table-responsive">
+                                        <table class="table align-items-center table-flush">
+                                        <thead class="thead-light">
+                                            <tr>
+                                            <th scope="col" class="sort" data-sort="name">Instansi</th>
+                                            <th scope="col" class="sort" data-sort="budget">Jumlah Antrean</th>
+                                            <th scope="col" class="sort" data-sort="completion">Waktu Tunggu</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody class="list">
+                                            <tr>
+                                                <td>
+                                                    <h4>Bank</h4>
+                                                </td>
+                                                <td>
+                                                    {{ $count1 }}
+                                                </td>
+                                                <td>
+                                                    {{ 7*$count1 }} menit
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h4>Imigrasi</h4>
+                                                </td>
+                                                <td>
+                                                    {{ $count2 }}
+                                                </td>
+                                                <td>
+                                                    {{ 7*$count2 }} menit
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h4>Kesehatan</h4>
+                                                </td>
+                                                <td>
+                                                    {{ $count3 }}
+                                                </td>
+                                                <td>
+                                                    {{ 7*$count3 }} menit
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h4>Police Samsat</h4>
+                                                </td>
+                                                <td>
+                                                    {{ $count4 }}
+                                                </td>
+                                                <td>
+                                                    {{ 7*$count4 }} menit
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                <!--/modal-->
             </div>
             <div class="col-auto">
               <div class="icon icon-shape bg-gradient-cyan text-white rounded-circle shadow">
@@ -55,10 +133,7 @@
               </div>
             </div>
           </div>
-          <p class="mt-3 mb-0 text-sm">
 
-            <span class="text-nowrap">Menit</span>
-          </p>
         </div>
       </div>
     </div>
