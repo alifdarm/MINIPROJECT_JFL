@@ -139,25 +139,25 @@
             <div class="alert alert-default" role="alert">
                 <h2 style="color: aliceblue;"><strong>+- {{ 7*($bni_len) }} menit</strong> ({{ $bni_len}} Antrean)</h2> <br>
                 No. antrean sekarang :<select name="no_bni"><strong><option selected="selected" data-select2-id="3" id="choice"> A{{ $bni_len + 1 }} </option></strong></select><br>
-                Rata-rata  Tiap Antrean : <strong> 9 menit</strong>
+                Rata-rata  Tiap Antrean : <strong> 7 menit</strong>
             </div>
             @elseif($id == 2)
             <div class="alert alert-default" role="alert">
                 <h2 style="color: aliceblue;"><strong>+- {{ 7*($imigrasi_len) }} menit</strong> ({{ $imigrasi_len}} Antrean)</h2> <br>
                 No. antrean sekarang :<select name="no_imigrasi"><strong><option selected="selected" data-select2-id="3" id="choice"> B{{ $imigrasi_len + 1 }} </option></strong></select><br>
-                Rata-rata  Tiap Antrean : <strong> 9 menit</strong>
+                Rata-rata  Tiap Antrean : <strong> 7 menit</strong>
             </div>
             @elseif($id == 3)
             <div class="alert alert-default" role="alert">
                 <h2 style="color: aliceblue;"><strong>+- {{ 7*($bpjs_len) }} menit</strong> ({{ $bpjs_len}} Antrean)</h2> <br>
                 No. antrean sekarang :<select name="no_bpjs"><strong><option selected="selected" data-select2-id="3" id="choice"> C{{ $bpjs_len + 1 }} </option></strong></select><br>
-                Rata-rata  Tiap Antrean : <strong> 9 menit</strong>
+                Rata-rata  Tiap Antrean : <strong> 7 menit</strong>
             </div>
             @elseif($id == 4)
             <div class="alert alert-default" role="alert">
                 <h2 style="color: aliceblue;"><strong>+- {{ 7*($samsat_len) }} menit</strong> ({{ $samsat_len}} Antrean)</h2> <br>
                 No. antrean sekarang :<select name="no_samsat"><strong><option selected="selected" data-select2-id="3" id="choice"> C{{ $samsat_len + 1 }} </option>    </strong></select><br>
-                Rata-rata  Tiap Antrean : <strong> 9 menit</strong>
+                Rata-rata  Tiap Antrean : <strong> 7 menit</strong>
             </div>
             @endif
           <p class="card-text">Keterangan :</p>

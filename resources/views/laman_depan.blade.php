@@ -79,7 +79,11 @@
                                                     {{ $count1 }}
                                                 </td>
                                                 <td>
-                                                    {{ 7*$count1 }} menit
+                                                    @if($count1 == 0)
+                                                        {{ 7*$count1 }} menit
+                                                    @else
+                                                       +- {{ 7*$count1 }} menit
+                                                    @endif
                                                 </td>
                                             </tr>
                                             <tr>
@@ -90,7 +94,11 @@
                                                     {{ $count2 }}
                                                 </td>
                                                 <td>
-                                                    {{ 7*$count2 }} menit
+                                                    @if($count2 == 0)
+                                                        {{ 7*$count2 }} menit
+                                                    @else
+                                                       +- {{ 7*$count2 }} menit
+                                                    @endif
                                                 </td>
                                             </tr>
                                             <tr>
@@ -101,7 +109,11 @@
                                                     {{ $count3 }}
                                                 </td>
                                                 <td>
-                                                    {{ 7*$count3 }} menit
+                                                    @if($count3 == 0)
+                                                        {{ 7*$count3 }} menit
+                                                    @else
+                                                       +- {{ 7*$count3 }} menit
+                                                    @endif
                                                 </td>
                                             </tr>
                                             <tr>
@@ -112,7 +124,11 @@
                                                     {{ $count4 }}
                                                 </td>
                                                 <td>
-                                                    {{ 7*$count4 }} menit
+                                                    @if($count4 == 0)
+                                                        {{ 7*$count4 }} menit
+                                                    @else
+                                                       +- {{ 7*$count4 }} menit
+                                                    @endif
                                                 </td>
                                             </tr>
                                         </tbody>
