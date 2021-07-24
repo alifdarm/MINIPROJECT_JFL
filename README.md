@@ -1,4 +1,4 @@
-<p align="center"><img src="https://finalprojecbot.herokuapp.com/content/13001765727712" width="30%" height="auto"></p>
+<p align="center"><img src="public/logo_app2.png" width="30%" height="auto"></p>
 
 ## Antre Yuk!
 
