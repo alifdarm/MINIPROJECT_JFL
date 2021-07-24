@@ -21,10 +21,8 @@ Link akses project : http://floating-coast-55439.herokuapp.com/
 ## Dokumentasi
 
 <span>
-    <img src="https://finalprojecbot.herokuapp.com/content/13001826442944" width="60%" height="auto">
-    <img src="https://finalprojecbot.herokuapp.com/content/13001843785811" width="60%" height="auto">
-    <img src="https://finalprojecbot.herokuapp.com/content/13001857601523" width="60%" height="auto">
-    <img src="https://finalprojecbot.herokuapp.com/content/13001864399743" width="60%" height="auto">
-    <img src="https://finalprojecbot.herokuapp.com/content/13001870324064" width="60%" height="auto">
+    <img src="public/front.jpg" width="60%" height="auto">
+    <img src="public/login.jpg" width="60%" height="auto">
+    <img src="public/mainpage.jpg" width="60%" height="auto">
 </span>
 
